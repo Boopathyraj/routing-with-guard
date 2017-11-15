@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <p>
+login works!
+</p>
+<div>
+  <p>{{message}}</p>
+    <!-- <p>
+    <button type="submit" class="btn btn-default" (click)="login()" *ngIf="!auth.isLoggedIn">Login</button>
+        <button type="submit" class="btn btn-default" (click)="logout()" *ngIf="!auth.isLoggedIn">Logout</button>
+    </p>  -->
+    <br>
+
+    <p>
+      <button (click)="login()" class="btn btn-info" *ngIf="!auth.isLoggedIn">Login</button>
+      <button (click)="logout()" class="btn btn-info"  *ngIf="auth.isLoggedIn">Logout</button>
+    </p>
+        
+</div>
+
+<router-outlet></router-outlet>
+</body>
+</html>
